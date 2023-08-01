@@ -13,7 +13,7 @@ const Header = () => {
       query: ''
     },
     onSubmit: (val, { resetForm }) => {
-      nav(`/searchmeal/${val.query}`);
+      //  nav(`/searchmeal/${val.query}`);
       resetForm();
     }
   });
