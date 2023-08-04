@@ -55,7 +55,7 @@ const HomePage = () => {
       </div>
 
 
-      <div className=' grid bg-brown-300 grid-cols-3 gap-7 p-5 items-start  msm:grid-cols-1 mmd:grid-cols-2'>
+      <div className=' grid bg-brown-300 grid-cols-3 gap-7 p-5 items-start  msm:grid-cols-2 mmd:grid-cols-3'>
         {data.categories.map((meal) => {
           return <div
             onClick={() => nav(`/meals/detail/${meal.strCategory}`)}
@@ -90,7 +90,7 @@ const HomePage = () => {
       </div>
 
 
-      <div className=' bg-brown-300  gap-7 p-5 items-start  msm:grid-cols-2 mmd:grid-cols-2'>
+      <div className=' bg-brown-300  gap-7 p-5 items-start  msm:grid-cols-2 mmd:grid-cols-3'>
         <div>
           {dat.meals.map((meal) => {
             return <div key={meal.idMeal} className='grid grid-cols-3  space-y-5 shadow-2xl cursor-pointer '>
